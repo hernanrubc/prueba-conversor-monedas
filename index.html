@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba - Conversor de Monedas HR</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="./assets/img/cambio-moneda.png" alt="Banner" class="banner-imagen">
+            <div class="overlay">
+                <h1 class="titulo-banner">Conversor de Monedas</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <input type="number" id="monto" placeholder="Ingrese monto en pesos chilenos">
+            <select id="moneda">
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+            </select>
+            <button id="convertir">Convertir</button>
+        </div>
+        <div id="resultado"></div>
+        <div class="grafico-contenedor">
+            <canvas id="miGrafico"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; conversor de monedas - hernan rubio - sep 2024</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
